@@ -22,7 +22,7 @@ import com.rdsystem.services.PassbookService;
 
 @CrossOrigin(origins = "http://localhost:5174")
 @RestController
-@RequestMapping("/api/v1")
+
 public class rdpassbookcontroller {
 
 	@Autowired
