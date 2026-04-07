@@ -22,8 +22,8 @@ import com.rdsystem.services.PassbookService;
 
 @CrossOrigin(origins = "http://localhost:5174")
 @RestController
-
-public class rdpassbookcontroller {
+@RequestMapping("/api")
+public class RdPassbookController {
 
 	@Autowired
 	private rdpassbookRepo prepo;
@@ -38,7 +38,7 @@ public class rdpassbookcontroller {
 		return prepo.getrdpassbookAllDetails();
 	}
 	
-	@GetMapping("/detail")
+	@GetMapping("/detail/{rid}")
 	private List<UserpassbookDto> getDetail(@PathVariable("rid") int rid){
 		return prepo.getrdpassbookAllDetail(rid);
 	}
