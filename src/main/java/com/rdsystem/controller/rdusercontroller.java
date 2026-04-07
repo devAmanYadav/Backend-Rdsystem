@@ -15,7 +15,7 @@ import com.rdsystem.repo.rduserRepo;
 import com.rdsystem.security.JwtUtil;
 
 @RestController
-public class RduserController {
+public class RdUserController {
 
     @Autowired
     private rduserRepo rdrepo;
