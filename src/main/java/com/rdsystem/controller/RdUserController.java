@@ -15,6 +15,7 @@ import com.rdsystem.repo.rduserRepo;
 import com.rdsystem.security.JwtUtil;
 
 @RestController
+@RequestMapping("/api")
 public class RdUserController {
 
     @Autowired
